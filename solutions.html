@@ -80,7 +80,69 @@
             <div class="title">
                 <h2>解決方案</h2>
             </div>
-            <div class="row">
+
+            <!-- 手機版 -->
+            <div class="row d-md-none">
+                <div class="col-md-9">
+                    <div class="card card-plain mt-0">
+                        <div class="card-body pt-0">
+                            <h4 class="card-title">標題 1</h4>
+                            <p class="card-text">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
+                        </div>
+                        <img class="card-img-bottom"
+                             src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                             alt="Card image cap">
+                    </div>
+                    <div class="card card-plain mt-0">
+                        <div class="card-body pt-0">
+                            <h4 class="card-title">標題 2</h4>
+                            <p class="card-text">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
+                        </div>
+                        <img class="card-img-bottom"
+                             src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                             alt="Card image cap">
+                    </div>
+                    <div class="card card-plain mt-0">
+                        <div class="card-body pt-0">
+                            <h4 class="card-title">標題 3</h4>
+                            <p class="card-text">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
+                        </div>
+                        <img class="card-img-bottom"
+                             src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                             alt="Card image cap">
+                    </div>
+                    <div class="card card-plain mt-0">
+                        <div class="card-body pt-0">
+                            <h4 class="card-title">標題 4</h4>
+                            <p class="card-text">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
+                        </div>
+                        <img class="card-img-bottom"
+                             src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                             alt="Card image cap">
+                    </div>
+                    <div class="card card-plain mt-0">
+                        <div class="card-body pt-0">
+                            <h4 class="card-title">標題 5</h4>
+                            <p class="card-text">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
+                        </div>
+                        <img class="card-img-bottom"
+                             src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                             alt="Card image cap">
+                    </div>
+                    <div class="card card-plain mt-0">
+                        <div class="card-body pt-0">
+                            <h4 class="card-title">標題 6</h4>
+                            <p class="card-text">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
+                        </div>
+                        <img class="card-img-bottom"
+                             src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                             alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 手機版以外排版 -->
+            <div class="row d-none d-md-flex">
                 <div class="col-md-9">
                     <div class="siema">
                         <div class="card card-plain mt-0">
@@ -139,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-none d-md-block col-md-3">
+                <div class="col-md-3">
                     <ul class="nav nav-pills nav-pills-icons flex-column">
                         <li class="nav-item" data-goto="1">
                             <a class="nav-link active" href="#">1</a>
@@ -215,7 +277,9 @@
   let mySiema = new Siema({
     onChange: function () {
       $('.nav-pills .nav-item .nav-link').removeClass('active')
-      $('.nav-pills .nav-item[data-goto=\'' + (mySiema.currentSlide + 1) + '\']').children('.nav-link').addClass('active')
+      $('.nav-pills .nav-item[data-goto=\'' + (mySiema.currentSlide + 1) + '\']').
+      children('.nav-link').
+      addClass('active')
     },
   })
 
