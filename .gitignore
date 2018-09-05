@@ -77,3 +77,5 @@ static/src/stylesheets/pasteup/.npmrc
 *.key
 .vscode/settings.json
 
+# Firebase
+.firebase
