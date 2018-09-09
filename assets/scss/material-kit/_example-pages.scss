@@ -31,6 +31,9 @@
 }
 .section{
   padding: 70px 0;
+    &.section-less-padding-top{
+        padding-top: 20px;
+    }
 }
 .profile-page{
     .page-header{
