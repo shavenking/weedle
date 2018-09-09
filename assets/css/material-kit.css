@@ -10092,6 +10092,17 @@ textarea {
       color: #fff; }
     .navbar.bg-dark .navbar-toggler .navbar-toggler-icon {
       background-color: #fff; }
+  .navbar.bg-gray {
+    color: #3C4858;
+    background-color: #ced4da !important;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(206, 212, 218, 0.46); }
+    .navbar.bg-gray .dropdown-item:hover,
+    .navbar.bg-gray .dropdown-item:focus {
+      box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(206, 212, 218, 0.4);
+      background-color: #ced4da;
+      color: #3C4858; }
+    .navbar.bg-gray .navbar-toggler .navbar-toggler-icon {
+      background-color: #3C4858; }
   .navbar.navbar-transparent {
     background-color: transparent !important;
     box-shadow: none;
