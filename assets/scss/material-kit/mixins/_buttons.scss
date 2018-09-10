@@ -274,6 +274,9 @@
     &.btn-behance {
         @include bmd-raised-button-variant($white, $social-behance, $social-behance);
     }
+    &.btn-line {
+      @include  bmd-raised-button-variant($white, $social-line, $social-line);
+    }
 }
 
 @mixin undo-bs-tab-focus() {
